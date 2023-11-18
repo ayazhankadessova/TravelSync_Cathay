@@ -33,7 +33,7 @@
             <!-- Add more options as needed -->
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Pay</button>
       </form>
     </div>
   </div>
@@ -57,10 +57,14 @@ export default {
     submitForm() {
       // Handle form submission
       // Generate a random ID for the booking
-      const bookingId = Math.floor(Math.random() * 10000000)
+      //   const bookingId = Math.floor(Math.random() * 10000000)
+      const bookingId = 617289303
 
       // Display the booking ID in an alert
       alert(`Booking created with ID: ${bookingId}`)
+
+      // Redirect to the payment gateway page
+      this.$router.push({ name: 'PaymentGateway', params: { bookingId: bookingId } })
     }
   }
 }

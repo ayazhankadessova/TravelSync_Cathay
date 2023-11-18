@@ -33,6 +33,13 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/BookHotel.vue'),
       props: true
+    },
+    // Add this to your routes array
+    {
+      path: '/payment-gateway',
+      name: 'PaymentGateway',
+      component: () => import('../views/PaymentGateway.vue')
+      // props: true
     }
   ]
 })
