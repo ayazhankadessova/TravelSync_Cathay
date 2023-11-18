@@ -95,101 +95,58 @@
       </div>
     </main>
     <!-- popular Destinations -->
-    <section class="destinations" id="destinations">
-      <div class="container">
-        <!-- title -->
-        <h2 class="section-title">Popular Destinations</h2>
-        <!-- cards -->
-
-        <div class="swiper swiper1">
-          <div class="destinations-cards swiper-wrapper">
-            <!-- card 1 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1581790061118-2cd9a40164b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Big sur</h5>
-              <h6>Califonia USA</h6>
+    <section class="container mt-5" id="destinations">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card rounded">
+            <img
+              src="https://images.unsplash.com/photo-1581790061118-2cd9a40164b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+              class="card-img-top rounded"
+              alt="Big sur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Big sur</h5>
+              <p class="card-text">Califonia USA</p>
             </div>
-            <!-- card 2 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1527824404775-dce343118ebc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Prescott</h5>
-              <h6>Arizona, USA</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded">
+            <img
+              src="https://images.unsplash.com/photo-1542321993-8fc36217e26d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top rounded"
+              alt="Big sur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Senja Island</h5>
+              <p class="card-text">Norway</p>
             </div>
-            <!-- card 3 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1512936702668-1ab037aced2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Fort Mayers</h5>
-              <h6>Florida, USA</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+              class="card-img-top rounded"
+              alt="Big sur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eiffel Tower</h5>
+              <p class="card-text">Paris, France</p>
             </div>
-            <!-- card 4 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Tucson</h5>
-              <h6>Arizona, USA</h6>
-            </div>
-            <!-- card 5 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1601425262040-ba23fe84f701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>St. Joseph</h5>
-              <h6>Michigan, USA</h6>
-            </div>
-            <!-- card 6 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Madrid</h5>
-              <h6>Spain</h6>
-            </div>
-            <!-- card 7 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1542321993-8fc36217e26d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Senja Island</h5>
-              <h6>Norway</h6>
-            </div>
-            <!-- card 8 -->
-            <div class="destination-card swiper-slide">
-              <img
-                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-                alt=""
-                width="203"
-                height="181"
-              />
-              <h5>Eiffel Tower</h5>
-              <h6>Paris France</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded">
+            <img
+              src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top rounded"
+              alt="Big sur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Madrid</h5>
+              <p class="card-text">Spain</p>
             </div>
           </div>
         </div>
