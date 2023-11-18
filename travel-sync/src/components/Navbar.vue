@@ -1,19 +1,17 @@
 <template>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">TravelSync+</a>
       <button
         class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
+        @click="isCollapsed = !isCollapsed"
+        :aria-expanded="!isCollapsed"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" :class="{ show: !isCollapsed }" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
@@ -29,6 +27,12 @@
           </li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+let isCollapsed = ref(true)
+</script>
