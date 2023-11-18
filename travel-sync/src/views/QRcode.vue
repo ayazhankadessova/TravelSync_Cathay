@@ -14,10 +14,10 @@
                 <RouterLink class="nav-link" to="/HomePage">TravelSync+</RouterLink>
               </li>
               <li class="nav-item">
-                <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
+                <RouterLink class="nav-link active" to="/TravelSpaceForm">Home</RouterLink>
               </li>
               <li class="nav-item">
-                <RouterLink class="nav-link" to="/events">Hotels</RouterLink>
+                <RouterLink class="nav-link" to="/hotels">Hotels</RouterLink>
               </li>
               <li class="nav-item">
                 <RouterLink class="nav-link" to="/becomeVol">Transport</RouterLink>

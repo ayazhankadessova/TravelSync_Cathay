@@ -1,8 +1,37 @@
 <template>
+   <!-- Navbar -->
+   <div class="container-fluid"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">TravelSync+</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <RouterLink class="nav-link" to="/HomePage">TravelSync+</RouterLink>
+              </li>
+              <li class="nav-item">
+                <RouterLink class="nav-link " to="/TravelSpaceForm">Home</RouterLink>
+              </li>
+              <li class="nav-item">
+                <RouterLink class="nav-link active" to="/hotels">Hotels</RouterLink>
+              </li>
+              <li class="nav-item">
+                <RouterLink class="nav-link" to="/becomeVol">Transport</RouterLink>
+              </li>
+              <li class="nav-item">
+                <RouterLink class="nav-link" to="/volunteers">Expenses</RouterLink>
+              </li>
+            </ul>
+          </div>
+    </nav>
+    </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-4 my-4" v-for="hotel in hotels" :key="hotel.name">
-        <div class="card square-card" style="width: 18rem">
+        <div class="card square-card" style="width: 24rem; height: 21rem;">
           <img :src="hotel.image" class="card-img-top hotel-image" :alt="hotel.name" />
           <div class="card-body">
             <h5 class="card-title">{{ hotel.name }}</h5>

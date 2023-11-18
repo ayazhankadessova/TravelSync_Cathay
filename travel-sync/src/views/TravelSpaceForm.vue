@@ -65,10 +65,10 @@ const removeDestination = function (index) {
                 <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
               </li>
               <li class="nav-item">
-                <RouterLink class="nav-link" to="/events">Hotels</RouterLink>
+                <RouterLink class="nav-link" to="/hotels">Hotels</RouterLink>
               </li>
               <li class="nav-item">
-                <RouterLink class="nav-link" to="/becomeVol">Transport</RouterLink>
+                <RouterLink class="nav-link" to="/joinSpace">Transport</RouterLink>
               </li>
               <li class="nav-item">
                 <RouterLink class="nav-link" to="/volunteers">Expenses</RouterLink>
