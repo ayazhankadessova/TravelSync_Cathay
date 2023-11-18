@@ -1,353 +1,514 @@
 <template>
-  <main class="main">
-    <!--==================== HOME ====================-->
-    <section class="home" id="home">
-      <img src="assets/img/home1.jpg" alt="" class="home__img" />
+  <body>
+    <!-- Showcase -->
+    <main class="main" id="home">
+      <!-- Header -->
+      <header class="header">
+        <!-- logo TODO -->
 
-      <div class="home__container container grid">
-        <div class="home__data">
-          <span class="home__data-subtitle">Discover your place</span>
-          <h1 class="home__data-title">
-            Explore The <br />
-            Best
-            <b
-              >Beautiful <br />
-              Beaches</b
-            >
-          </h1>
-          <a href="#" class="button">Explore</a>
+        <div class="logo">
+          <img src="/src/assets/Logo/logo.png" alt="2rism" />
         </div>
 
-        <div class="home__social">
-          <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-            <i class="ri-facebook-box-fill"></i>
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-            <i class="ri-instagram-fill"></i>
-          </a>
-          <a href="https://twitter.com/" target="_blank" class="home__social-link">
-            <i class="ri-twitter-fill"></i>
-          </a>
-        </div>
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navlists">
+            <li class="navlist"><a href="#home">Home</a></li>
+            <li class="navlist"><a href="#restaurants">Hotels</a></li>
+            <li class="navlist"><a href="#restaurants">Restaurants</a></li>
+            <li class="navlist"><a href="#tours">Tours</a></li>
+            <li class="navlist"><a href="#destinations">Destinations</a></li>
+            <li class="navlist"><a href="#activities">Activities</a></li>
+            <li class="navlist"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-        <div class="home__info">
-          <div>
-            <span class="home__info-title">5 best places to visit</span>
-            <a href="" class="button button--flex button--link home__info-button">
-              More <i class="ri-arrow-right-line"></i>
-            </a>
+        <!-- user || navigator -->
+        <div class="user-profile">
+          <div class="profile-name">
+            <h2>
+              <span class="hello"> Hello, </span>
+              <span class="indiviual-name"> Ayazhan Kadessova </span>
+            </h2>
           </div>
 
-          <div class="home__info-overlay">
-            <img src="assets/img/home2.jpg" alt="" class="home__info-img" />
+          <div class="profile-pic">
+            <img
+              src="/Imgs/ProfilePic/124164909_2212008852330390_5501660797980127002_n (1).jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+
+      <!-- showcase-content -->
+      <div class="showcase-content">
+        <h1 style="color: black">Discover the most engaging places</h1>
+        <a href="" target="_blank" class="showcase-button">
+          <img src="/Imgs/icons/globe.png" alt="" /> Discover on 3D globe</a
+        >
+      </div>
+
+      <!-- showcase-search -->
+      <div class="showcase-search">
+        <div class="filters">
+          <div class="filter">
+            <div class="search-icon">
+              <img src="/Imgs/icons/location.png" alt="" />
+            </div>
+            <div class="search-text">
+              <h4>Location</h4>
+              <h2>Explore nearby</h2>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="search-icon">
+              <img src="/Imgs/icons/activities.png" alt="" />
+            </div>
+            <div class="search-text">
+              <h4>Activity</h4>
+              <h2>All Activities</h2>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="search-icon">
+              <img src="/Imgs/icons/calendar.png" alt="" />
+            </div>
+            <div class="search-text">
+              <h4>When</h4>
+              <h2>Chose a date</h2>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="search-icon">
+              <img src="/Imgs/icons/guest.png" alt="" />
+            </div>
+            <div class="search-text">
+              <h4>Guests</h4>
+              <h2>1 guest</h2>
+            </div>
+          </div>
+        </div>
+        <div class="search-button-icon">
+          <img src="/Imgs/icons/search.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <!-- popular Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <!-- title -->
+        <h2 class="section-title">Popular Destinations</h2>
+        <!-- cards -->
+
+        <div class="swiper swiper1">
+          <div class="destinations-cards swiper-wrapper">
+            <!-- card 1 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1581790061118-2cd9a40164b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Big sur</h5>
+              <h6>Califonia USA</h6>
+            </div>
+            <!-- card 2 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1527824404775-dce343118ebc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Prescott</h5>
+              <h6>Arizona, USA</h6>
+            </div>
+            <!-- card 3 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1512936702668-1ab037aced2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Fort Mayers</h5>
+              <h6>Florida, USA</h6>
+            </div>
+            <!-- card 4 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Tucson</h5>
+              <h6>Arizona, USA</h6>
+            </div>
+            <!-- card 5 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1601425262040-ba23fe84f701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>St. Joseph</h5>
+              <h6>Michigan, USA</h6>
+            </div>
+            <!-- card 6 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Madrid</h5>
+              <h6>Spain</h6>
+            </div>
+            <!-- card 7 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1542321993-8fc36217e26d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Senja Island</h5>
+              <h6>Norway</h6>
+            </div>
+            <!-- card 8 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Eiffel Tower</h5>
+              <h6>Paris France</h6>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-      <div class="about__container container grid">
-        <div class="about__data">
-          <h2 class="section__title about__title">
-            More Information <br />
-            About The Best Beaches
-          </h2>
-          <p class="about__description">
-            You can find the most beautiful and pleasant places at the best prices with special
-            discounts, you choose the place we will guide you all the way to wait, get your place
-            now.
-          </p>
-          <a href="#" class="button">Reserve a place</a>
-        </div>
-
-        <div class="about__img">
-          <div class="about__img-overlay">
-            <img src="assets/img/about1.jpg" alt="" class="about__img-one" />
-          </div>
-
-          <div class="about__img-overlay">
-            <img src="assets/img/about2.jpg" alt="" class="about__img-two" />
+    <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title">Hotels And Restaurants</h2>
+          <div class="section-button hotel-button">
+            view all <img src="/Imgs/icons/bleft.png" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!--==================== DISCOVER ====================-->
-    <section class="discover section" id="discover">
-      <h2 class="section__title">
-        Discover the most <br />
-        attractive places
-      </h2>
-
-      <div class="discover__container container swiper-container">
-        <div class="swiper-wrapper">
-          <!--==================== DISCOVER 1 ====================-->
-          <div class="discover__card swiper-slide">
-            <img src="assets/img/discover1.jpg" alt="" class="discover__img" />
-            <div class="discover__data">
-              <h2 class="discover__title">Bali</h2>
-              <span class="discover__description">24 tours available</span>
-            </div>
+        <!-- cards -->
+        <div class="hotel-card">
+          <!-- card 1 -->
+          <div class="hotel-cards">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Monastero Santa Rosa Hotel & Spa</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Salerno, Italy</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
           </div>
-
-          <!--==================== DISCOVER 2 ====================-->
-          <div class="discover__card swiper-slide">
-            <img src="assets/img/discover2.jpg" alt="" class="discover__img" />
-            <div class="discover__data">
-              <h2 class="discover__title">Hawaii</h2>
-              <span class="discover__description">15 tours available</span>
-            </div>
+          <!-- card 2 -->
+          <div class="hotel-cards">
+            <img
+              src="https://images.unsplash.com/photo-1586974726316-c6302de6a160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Grand Hotel Tremezzo</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Lake Como, Italy</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
           </div>
-
-          <!--==================== DISCOVER 3 ====================-->
-          <div class="discover__card swiper-slide">
-            <img src="assets/img/discover3.jpg" alt="" class="discover__img" />
-            <div class="discover__data">
-              <h2 class="discover__title">Hvar</h2>
-              <span class="discover__description">18 tours available</span>
-            </div>
+          <!-- card 3 -->
+          <div class="hotel-cards">
+            <img
+              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>The Oberoi Udaivilas, Udaipur</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Udaipur, India</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=2.png" alt="" /></div>
           </div>
-
-          <!--==================== DISCOVER 4 ====================-->
-          <div class="discover__card swiper-slide">
-            <img src="assets/img/discover4.jpg" alt="" class="discover__img" />
-            <div class="discover__data">
-              <h2 class="discover__title">Whitehaven</h2>
-              <span class="discover__description">32 tours available</span>
-            </div>
+          <!-- card 4 -->
+          <div class="hotel-cards">
+            <img
+              src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>AKA Beverly Hills</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Los Angeles, United States</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== EXPERIENCE ====================-->
-    <section class="experience section">
-      <h2 class="section__title">
-        With Our Experience <br />
-        We Will Serve You
-      </h2>
-
-      <div class="experience__container container grid">
-        <div class="experience__content grid">
-          <div class="experience__data">
-            <h2 class="experience__number">20</h2>
-            <span class="experience__description"
-              >Year <br />
-              Experience</span
-            >
+          <!-- card 5 -->
+          <div class="hotel-cards off">
+            <img
+              src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Majestic Elegance</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Dominican Republic</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
           </div>
-
-          <div class="experience__data">
-            <h2 class="experience__number">75</h2>
-            <span class="experience__description"
-              >Complete <br />
-              tours</span
-            >
+          <!-- card 6 -->
+          <div class="hotel-cards off">
+            <img
+              src="https://images.unsplash.com/photo-1586495985096-787fb4a54ac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Dreams Watervilla</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Meeru Island, Maldives</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
           </div>
-
-          <div class="experience__data">
-            <h2 class="experience__number">650+</h2>
-            <span class="experience__description"
-              >Tourist <br />
-              Destination</span
-            >
+          <!-- card 7 -->
+          <div class="hotel-cards off">
+            <img
+              src="https://images.unsplash.com/photo-1594741158704-5a784b8e59fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Waldorf Astoria</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Rome, Italy</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=3.png" alt="" /></div>
           </div>
-        </div>
-
-        <div class="experience__img grid">
-          <div class="experience__overlay">
-            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one" />
-          </div>
-
-          <div class="experience__overlay">
-            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two" />
+          <!-- card 8 -->
+          <div class="hotel-cards off">
+            <img
+              src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h5>Gilli Air</h5>
+            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Indonesia</h6>
+            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--==================== VIDEO ====================-->
-    <section class="video section">
-      <h2 class="section__title">Video Tour</h2>
+    <!-- Tours/Travel -->
+    <section id="tours">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title">Travel Tips and Advice</h2>
+          <div class="section-button hotel-button">
+            view all <img src="/Imgs/icons/bleft.png" alt="" />
+          </div>
+        </div>
+        <div class="tours-cards">
+          <div class="tours-card">
+            <div class="tour-img">
+              <img
+                src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+                width="320"
+                height="380"
+              />
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>East Village Ice Cream Crawl</h3>
+                <p>
+                  We will stop at five different world-class ice cream shops on this 1.5 mile 1.5
+                  hour tour. At each ice cream store we'll explore the story behind the business and
+                  see what makes the ice cream unique as you savor every…
+                </p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt="" /> Avenger Initiative</h6>
+                <h6><img src="/Imgs/icons/message.png" alt="" /> 2</h6>
+              </div>
+            </div>
+          </div>
 
-      <div class="video__container container">
-        <p class="video__description">
-          Find out more with our video of the most beautiful and pleasant places for you and your
-          family.
+          <div class="tours-card">
+            <div class="tour-img">
+              <img
+                src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+                width="320"
+                height="380"
+              />
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Brooklyn Bridge cinematic photo walk</h3>
+                <p>
+                  This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but
+                  I’m always open to capture clients at different locations upon request for an
+                  additional charge.
+                </p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
+                <h6><img src="/Imgs/icons/user.png" alt="" /> Ager Pagla</h6>
+                <h6><img src="/Imgs/icons/message.png" alt="" />12</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- activities -->
+    <section id="activities">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title">Activities</h2>
+          <div class="section-button hotel-button">
+            view all <img src="/Imgs/icons/bleft.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Activities Cards -->
+        <div class="activities-cards">
+          <div class="activities-card">
+            <img
+              src="https://images.unsplash.com/photo-1513432800008-a900568fccfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h4>Sailing</h4>
+          </div>
+          <div class="activities-card">
+            <img
+              src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h4>Climbing</h4>
+          </div>
+          <div class="activities-card">
+            <img
+              src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h4>Skiing</h4>
+          </div>
+          <div class="activities-card">
+            <img
+              src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
+              alt=""
+              width="320"
+              height="380"
+            />
+            <h4>Hiking</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="About">
+      <div class="about-content">
+        <h2>About US</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla
+          facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta
+          consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos.
         </p>
 
-        <div class="video__content">
-          <video id="video-file">
-            <source src="assets/video/video.mp4" type="video/mp4" />
-          </video>
-
-          <button class="button button--flex video__button" id="video-button">
-            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-          </button>
+        <div class="section-button hotel-button">
+          Read More <img src="/Imgs/icons/bleft.png" alt="" />
         </div>
+      </div>
+
+      <div class="about-img">
+        <img src="/Imgs/about img.png" alt="" width="556" height="488" />
       </div>
     </section>
 
-    <!--==================== PLACES ====================-->
-    <section class="place section" id="place">
-      <h2 class="section__title">Choose Your Place</h2>
-
-      <div class="place__container container grid">
-        <!--==================== PLACES CARD 1 ====================-->
-        <div class="place__card">
-          <img src="assets/img/place1.jpg" alt="" class="place__img" />
-
-          <div class="place__content">
-            <span class="place__rating">
-              <i class="ri-star-line place__rating-icon"></i>
-              <span class="place__rating-number">4,8</span>
-            </span>
-
-            <div class="place__data">
-              <h3 class="place__title">Bali</h3>
-              <span class="place__subtitle">Indonesia</span>
-              <span class="place__price">$2499</span>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-sections">
+          <div class="footer-section">
+            <img src="/Imgs/Logo/logoblack.svg" alt="" />
+            <p>We always make our customers happy by providing as many choises as possible</p>
+            <div class="footer-social-icons">
+              <img src="/Imgs/icons/facebook.png" alt="" />
+              <img src="/Imgs/icons/twitter.png" alt="" />
+              <img src="/Imgs/icons/instagram.png" alt="" />
             </div>
           </div>
 
-          <button class="button button--flex place__button">
-            <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-
-        <!--==================== PLACES CARD 2 ====================-->
-        <div class="place__card">
-          <img src="assets/img/place2.jpg" alt="" class="place__img" />
-
-          <div class="place__content">
-            <span class="place__rating">
-              <i class="ri-star-line place__rating-icon"></i>
-              <span class="place__rating-number">5,0</span>
-            </span>
-
-            <div class="place__data">
-              <h3 class="place__title">Bora Bora</h3>
-              <span class="place__subtitle">Polinesia</span>
-              <span class="place__price">$1599</span>
-            </div>
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Menu</a></li>
+            </ul>
           </div>
-
-          <button class="button button--flex place__button">
-            <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-
-        <!--==================== PLACES CARD 3 ====================-->
-        <div class="place__card">
-          <img src="assets/img/place3.jpg" alt="" class="place__img" />
-
-          <div class="place__content">
-            <span class="place__rating">
-              <i class="ri-star-line place__rating-icon"></i>
-              <span class="place__rating-number">4,9</span>
-            </span>
-
-            <div class="place__data">
-              <h3 class="place__title">Hawaii</h3>
-              <span class="place__subtitle">EE.UU</span>
-              <span class="place__price">$3499</span>
-            </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="">why 2rism</a></li>
+              <li><a href="">Partner with us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
           </div>
-
-          <button class="button button--flex place__button">
-            <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-
-        <!--==================== PLACES CARD 4 ====================-->
-        <div class="place__card">
-          <img src="assets/img/place4.jpg" alt="" class="place__img" />
-
-          <div class="place__content">
-            <span class="place__rating">
-              <i class="ri-star-line place__rating-icon"></i>
-              <span class="place__rating-number">4,8</span>
-            </span>
-
-            <div class="place__data">
-              <h3 class="place__title">Whitehaven</h3>
-              <span class="place__subtitle">Australia</span>
-              <span class="place__price">$2499</span>
-            </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="">Account</a></li>
+              <li><a href="">Support Center</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
           </div>
-
-          <button class="button button--flex place__button">
-            <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-
-        <!--==================== PLACES CARD 5 ====================-->
-        <div class="place__card">
-          <img src="assets/img/place5.jpg" alt="" class="place__img" />
-
-          <div class="place__content">
-            <span class="place__rating">
-              <i class="ri-star-line place__rating-icon"></i>
-              <span class="place__rating-number">4,8</span>
-            </span>
-
-            <div class="place__data">
-              <h3 class="place__title">Hvar</h3>
-              <span class="place__subtitle">Croacia</span>
-              <span class="place__price">$1999</span>
-            </div>
+          <div class="footer-section">
+            <h3>
+              Subscribe on our destination review <br />
+              newsletters
+            </h3>
+            <form>
+              <div class="form-section">
+                <img src="/Imgs/icons/messagefooter.png" alt="" />
+                <label for="email">
+                  Your Email
+                  <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com " />
+                </label>
+              </div>
+              <button type="submit"><img src="/Imgs/icons/arrowleft.png" alt="" /></button>
+            </form>
           </div>
-
-          <button class="button button--flex place__button">
-            <i class="ri-arrow-right-line"></i>
-          </button>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!--==================== SUBSCRIBE ====================-->
-    <section class="subscribe section">
-      <div class="subscribe__bg">
-        <div class="subscribe__container container">
-          <h2 class="section__title subscribe__title">
-            Subscribe Our <br />
-            Newsletter
-          </h2>
-          <p class="subscribe__description">
-            Subscribe to our newsletter and get a special 30% discount.
-          </p>
-
-          <form action="" class="subscribe__form">
-            <input type="text" placeholder="Enter email" class="subscribe__input" />
-
-            <button class="button">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SPONSORS ====================-->
-    <section class="sponsor section">
-      <div class="sponsor__container container grid">
-        <div class="sponsor__content">
-          <img src="assets/img/sponsors1.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="assets/img/sponsors2.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="assets/img/sponsors3.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="assets/img/sponsors4.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="assets/img/sponsors5.png" alt="" class="sponsor__img" />
-        </div>
-      </div>
-    </section>
-  </main>
+    <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+    <div class="toggleClose"><i class="uil uil-multiply"></i></div>
+  </body>
 </template>
 
 <style>
