@@ -1,36 +1,34 @@
 <script setup>
 import { ref } from 'vue'
 
-
-
 const event = ref({
-     EventTitle : ' ',
-     Organizer : ' ',
-     Datetime : ' ',
-     Location : ' ',
-     termsOn : false,
-     Description :' ',
-     Quota: ' ',
-     Image: ' '
-      
+  EventTitle: '',
+  Organizer: '',
+  Datetime: '',
+  Location: '',
+  termsOn: false,
+  Description: '',
+  Quota: '',
+  Image: '',
+  Destinations: [] // Add Destinations property as an empty array
 })
 
 const newEvent = async function () {
-    console.log(JSON.stringify(event.value));
-    // post the booking to the backend
-    const response = await fetch('/api/events', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(event.value)
-    });
-    // convert the response to json
-    const json = await response.json();
-    // log the json
-    console.log(json);
-    // alert the user
-    alert(JSON.stringify(json));
+  console.log(JSON.stringify(event.value));
+  // post the booking to the backend
+  const response = await fetch('/api/events', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(event.value)
+  });
+  // convert the response to json
+  const json = await response.json();
+  // log the json
+  console.log(json);
+  // alert the user
+  alert(JSON.stringify(json));
 }
 
 const newDestination = ref('')
@@ -45,6 +43,7 @@ const addDestination = function () {
 const removeDestination = function (index) {
   event.value.Destinations.splice(index, 1)
 }
+
 </script>
 
 <template>
@@ -52,13 +51,16 @@ const removeDestination = function (index) {
       <!-- Navbar -->
       <div class="container-fluid"> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">TravelSync+</a>
+        <!-- <a class="navbar-brand" href="#">TravelSync+</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+              <li class="nav-item">
+                <RouterLink class="nav-link" to="/HomePage">TravelSync+</RouterLink>
+              </li>
               <li class="nav-item">
                 <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
               </li>
@@ -104,28 +106,32 @@ const removeDestination = function (index) {
               </div>
               <br>
               <div class="form-group">
-              <div class="form-group">
-              <label for="destinations">Destinations</label>
-              <div class="input-group">
-                <input v-model="newDestination" type="text" class="form-control" id="new-destination" placeholder="Enter a destination">
-                <button @click="addDestination" type="button" class="btn btn-outline-secondary" id="add-destination-button">+</button>
+                <label for="datetime">Select a Date</label>
+                <input v-model="event.DateTime" type="datetime-local" class="form-control" id="datetime">
               </div>
               <br>
-              <div v-for="(destination, index) in event.Destinations" :key="index" class="form-group">
-                <div class="input-group">
-                  <input v-model="event.value.Destinations[index]" type="text" class="form-control" :id="'destination-' + index" :placeholder="'Destination ' + (index + 1)">
-                  <button @click="removeDestination(index)" type="button" class="btn btn-outline-danger" :id="'remove-destination-button-' + index">-</button>
-                </div>
-              </div>
-            </div>
-            </div>
+             
+  <div class="form-group">
+    <label for="destinations">Destinations</label>
+    <div class="input-group">
+      <input v-model="newDestination" type="text" class="form-control" id="new-destination" placeholder="Enter a destination">
+      <button @click="addDestination" type="button" class="btn btn-outline-secondary" id="add-destination-button">+</button>
+    </div>
+  </div>
+  <br>
+  <div v-for="(destination, index) in event.Destinations" :key="index" class="form-group">
+    <div class="input-group">
+      <input v-model="event.Destinations[index]" type="text" class="form-control" :id="'destination-' + index" :placeholder="'Destination ' + (index + 1)">
+      <button @click="removeDestination(index)" type="button" class="btn btn-outline-danger" :id="'remove-destination-button-' + index">-</button>
+    </div>
+  </div>
               <br>
               <div class="form-group form-check">
                 <input v-model="event.Highlight" type="checkbox" class="form-check-input" id="highlight">
                 <label class="form-check-label" for="highlight">Highlight</label>
               </div>
               <br>
-               <button type="submit" class="btn btn-primary">Save</button>
+               <a href="/QRcode" class="btn btn-primary">Create</a>
             </form>
           </div>
   
