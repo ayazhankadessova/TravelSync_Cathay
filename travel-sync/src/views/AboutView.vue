@@ -158,9 +158,11 @@
       <div class="container">
         <div class="title-container">
           <h2 class="section-title">Hotels And Restaurants</h2>
-          <div class="section-button hotel-button">
-            view all <img src="/Imgs/icons/bleft.png" alt="" />
-          </div>
+          <router-link to="/hotels">
+            <div class="section-button hotel-button">
+              view all <img src="/Imgs/icons/bleft.png" alt="" />
+            </div>
+          </router-link>
         </div>
         <!-- cards -->
         <div class="row row-cols-1 row-cols-md-4 g-4">
