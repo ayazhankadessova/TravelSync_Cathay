@@ -12,12 +12,26 @@
           <input type="email" id="email" v-model="email" class="form-control" required />
         </div>
         <div class="form-group">
-          <label for="people">Number of People</label>
-          <input type="number" id="people" v-model="people" class="form-control" required min="1" />
-        </div>
-        <div class="form-group">
           <label for="date">Date</label>
           <input type="date" id="date" v-model="date" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="passport">Passport Number</label>
+          <input type="text" id="passport" v-model="passport" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input type="tel" id="contact" v-model="contact" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="roomType">Room Type</label>
+          <select id="roomType" v-model="roomType" class="form-control" required>
+            <option value="">Select a room type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+            <!-- Add more options as needed -->
+          </select>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -33,7 +47,10 @@ export default {
       name: '',
       email: '',
       people: 1,
-      date: ''
+      date: '',
+      passport: '',
+      contact: '',
+      roomType: ''
     }
   },
   methods: {
