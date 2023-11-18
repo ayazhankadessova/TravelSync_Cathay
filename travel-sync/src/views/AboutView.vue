@@ -360,87 +360,111 @@
       </div>
     </section>
 
-    <!-- about -->
-    <section id="About">
-      <div class="about-content">
-        <h2>About US</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla
-          facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta
-          consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos.
-        </p>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
 
-        <div class="section-button hotel-button">
-          Read More <img src="/Imgs/icons/bleft.png" alt="" />
-        </div>
-      </div>
-
-      <div class="about-img">
-        <img src="/Imgs/about img.png" alt="" width="556" height="488" />
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
       <div class="container">
-        <div class="footer-sections">
-          <div class="footer-section">
-            <img src="/Imgs/Logo/logoblack.svg" alt="" />
-            <p>We always make our customers happy by providing as many choises as possible</p>
-            <div class="footer-social-icons">
-              <img src="/Imgs/icons/facebook.png" alt="" />
-              <img src="/Imgs/icons/twitter.png" alt="" />
-              <img src="/Imgs/icons/instagram.png" alt="" />
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Hotels</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Transports</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Expenses</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                eum harum corrupti dicta, aliquam sequi voluptate quas.
+              </p>
             </div>
           </div>
+        </section>
+        <!-- Section: Text -->
 
-          <div class="footer-section">
-            <h3>About</h3>
-            <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Menu</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="">why 2rism</a></li>
-              <li><a href="">Partner with us</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Support</h3>
-            <ul>
-              <li><a href="">Account</a></li>
-              <li><a href="">Support Center</a></li>
-              <li><a href="">Feedback</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>
-              Subscribe on our destination review <br />
-              newsletters
-            </h3>
-            <form>
-              <div class="form-section">
-                <img src="/Imgs/icons/messagefooter.png" alt="" />
-                <label for="email">
-                  Your Email
-                  <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com " />
-                </label>
-              </div>
-              <button type="submit"><img src="/Imgs/icons/arrowleft.png" alt="" /></button>
-            </form>
-          </div>
-        </div>
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
       </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">TravelSync+</a>
+      </div>
+      <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+
+    <!-- End of .container -->
 
     <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
     <div class="toggleClose"><i class="uil uil-multiply"></i></div>

@@ -388,12 +388,12 @@ img {
 }
 
 /* footer */
-footer {
+/* footer {
   background: var(--footer-color);
   padding-top: 120px;
   padding-bottom: 120px;
   margin-top: 120px;
-}
+} */
 
 .footer-sections {
   display: grid;
