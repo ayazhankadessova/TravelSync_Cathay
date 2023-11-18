@@ -239,6 +239,92 @@
       </div>
     </section>
 
+    <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title">Transportation</h2>
+          <router-link to="/hotels">
+            <div class="section-button hotel-button">
+              view all <img src="/Imgs/icons/bleft.png" alt="" />
+            </div>
+          </router-link>
+        </div>
+        <!-- cards -->
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <!-- card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Uber</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Salerno, Italy
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <!-- Repeat the above structure for each card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1586974726316-c6302de6a160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bus</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Lake Como, Italy
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Metro</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Udaipur, India
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <!-- <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ferry</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Los Angeles, United States
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
     <!-- Tours/Travel -->
     <!-- Tours/Travel -->
     <section id="tours">
@@ -325,7 +411,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 class="card-img-top"
                 alt=""
               />
@@ -337,7 +423,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 class="card-img-top"
                 alt=""
               />
@@ -349,7 +435,7 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
+                src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=170&q=80"
                 class="card-img-top"
                 alt=""
               />
