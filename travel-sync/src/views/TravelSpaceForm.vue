@@ -48,34 +48,38 @@ const removeDestination = function (index) {
 
 <template>
     <div>
-      <!-- Navbar -->
-      <div class="container-fluid"> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="#">TravelSync+</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/HomePage">TravelSync+</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/hotels">Hotels</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/joinSpace">Transport</RouterLink>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/volunteers">Expenses</RouterLink>
-              </li>
-            </ul>
-          </div>
-    </nav>
+     <!-- Navbar -->
+    <div class="container-fluid">
+     
+     <nav class="navbar navbar-expand-lg navbar-light bg-cathay-blue">
+       <RouterLink class="navbar-brand" to="/HomePage">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnzw9Aa-sT5_WAg3c7gR02m5tAF49TiXlPyFdSYvw&s" alt="Cathay Pacific" class="navbar-logo" style="width: 65px;">
+       </RouterLink>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <RouterLink class="nav-link" to="/HomePage">TravelSync+</RouterLink>
+           </li>
+           <li class="nav-item">
+             <RouterLink class="nav-link active" to="/HomePage">Home</RouterLink>
+           </li>
+           <li class="nav-item">
+             <RouterLink class="nav-link" to="/hotels">Hotels</RouterLink>
+           </li>
+           <li class="nav-item">
+             <RouterLink class="nav-link" to="/joinSpace">Transport</RouterLink>
+           </li>
+           <li class="nav-item">
+             <RouterLink class="nav-link" to="/volunteers">Expenses</RouterLink>
+           </li>
+         </ul>
+       </div>
+     </nav>
+ 
     </div>
   
       <!-- Home/Events/New event container -->
