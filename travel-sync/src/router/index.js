@@ -42,15 +42,21 @@ const router = createRouter({
       // props: true
     },
     {
-      path: '/travel-space',
-      name: 'TravelSpaceForm',
-      component: () => import('../views/TravelSpaceForm.vue')
+      path: '/QRcode',
+      name: 'QRCode',
+      component: () => import('../views/QRCode.vue')
       // props: true
     },
     {
-      path: '/QRcode',
+      path: '/create-travel',
+      name: 'create-travel',
+      component: () => import('../views/CreateTravel.vue')
+      // props: true
+    },
+    {
+      path: '/travel',
       name: 'TravelSpaceForm',
-      component: () => import('../views/QRCode.vue')
+      component: () => import('../views/TravelSpaceForm.vue')
       // props: true
     }
   ]

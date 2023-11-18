@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-
 const event = ref({
   EventTitle: '',
   Organizer: '',
@@ -12,7 +11,6 @@ const event = ref({
   Image: '',
   Destinations: [] // Add Destinations property as an empty array
 })
-
 // const newEvent = async function () {
 //   console.log(JSON.stringify(event.value))
 //   // post the booking to the backend
@@ -30,38 +28,26 @@ const event = ref({
 //   // alert the user
 //   alert(JSON.stringify(json))
 // }
-
 const newDestination = ref('')
-
 const addDestination = function () {
   if (newDestination.value.trim() !== '') {
     event.value.Destinations.push(newDestination.value.trim())
     newDestination.value = ''
   }
 }
-
 const removeDestination = function (index) {
   event.value.Destinations.splice(index, 1)
 }
 </script>
-
 <template>
-  <div>
+  <div class="cont">
     <!-- Navbar -->
-    <div class="container-fluid"></div>
 
     <!-- Home/Events/New event container -->
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col">
-          <router-link class="text-decoration-none text-primary" to="/home">Home</router-link> / New
-          Travel Space
-        </div>
-      </div>
-    </div>
-
     <!-- Registration form section -->
-    <div class="container mt-4">
+    <br />
+    <br />
+    <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <h4>Travel Space Registration</h4>
@@ -99,7 +85,6 @@ const removeDestination = function (index) {
               />
             </div>
             <br />
-
             <div class="form-group">
               <label for="destinations">Destinations</label>
               <div class="input-group">
@@ -158,3 +143,10 @@ const removeDestination = function (index) {
     </div>
   </div>
 </template>
+
+<style computed>
+.cont {
+  background-image: url('/src/assets/background.jpeg');
+  height: 600px;
+}
+</style>

@@ -19,7 +19,7 @@
       <button @click="shareQRCodeLink" class="btn btn-primary">Share</button>
       <br />
       <br />
-      <a href="/travel-space" class="btn btn-primary">Go to Travel Space</a>
+      <a href="/home" class="btn btn-primary">Go to Travel Space</a>
     </div>
   </div>
 </template>
