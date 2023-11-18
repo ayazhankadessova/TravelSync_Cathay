@@ -10,7 +10,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
+      path: '/home',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -39,6 +39,18 @@ const router = createRouter({
       path: '/payment-gateway',
       name: 'PaymentGateway',
       component: () => import('../views/PaymentGateway.vue')
+      // props: true
+    },
+    {
+      path: '/travel-space',
+      name: 'TravelSpaceForm',
+      component: () => import('../views/TravelSpaceForm.vue')
+      // props: true
+    },
+    {
+      path: '/QRcode',
+      name: 'TravelSpaceForm',
+      component: () => import('../views/QRCode.vue')
       // props: true
     }
   ]
