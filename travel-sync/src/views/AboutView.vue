@@ -163,107 +163,81 @@
           </div>
         </div>
         <!-- cards -->
-        <div class="hotel-card">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
           <!-- card 1 -->
-          <div class="hotel-cards">
-            <img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Monastero Santa Rosa Hotel & Spa</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Salerno, Italy</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Monastero Santa Rosa Hotel & Spa</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Salerno, Italy
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
           </div>
           <!-- card 2 -->
-          <div class="hotel-cards">
-            <img
-              src="https://images.unsplash.com/photo-1586974726316-c6302de6a160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Grand Hotel Tremezzo</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Lake Como, Italy</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
+          <!-- Repeat the above structure for each card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1586974726316-c6302de6a160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Grand Hotel Tremezzo</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Lake Como, Italy
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
           </div>
-          <!-- card 3 -->
-          <div class="hotel-cards">
-            <img
-              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>The Oberoi Udaivilas, Udaipur</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Udaipur, India</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=2.png" alt="" /></div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Oberoi Udaivilas, Udaipur</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Udaipur, India
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
           </div>
-          <!-- card 4 -->
-          <div class="hotel-cards">
-            <img
-              src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>AKA Beverly Hills</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Los Angeles, United States</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
-          </div>
-          <!-- card 5 -->
-          <div class="hotel-cards off">
-            <img
-              src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Majestic Elegance</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Dominican Republic</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
-          </div>
-          <!-- card 6 -->
-          <div class="hotel-cards off">
-            <img
-              src="https://images.unsplash.com/photo-1586495985096-787fb4a54ac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Dreams Watervilla</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Meeru Island, Maldives</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
-          </div>
-          <!-- card 7 -->
-          <div class="hotel-cards off">
-            <img
-              src="https://images.unsplash.com/photo-1594741158704-5a784b8e59fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Waldorf Astoria</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Rome, Italy</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=3.png" alt="" /></div>
-          </div>
-          <!-- card 8 -->
-          <div class="hotel-cards off">
-            <img
-              src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h5>Gilli Air</h5>
-            <h6><img src="/Imgs/icons/map-pin-line.png" alt="" /> Indonesia</h6>
-            <div class="ratings"><img src="/Imgs/icons/rating=4.png" alt="" /></div>
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">AKA Beverly Hills</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <img src="/Imgs/icons/map-pin-line.png" alt="" />Los Angeles, United States
+                </h6>
+                <div class="ratings"><img src="/Imgs/icons/rating=5.png" alt="" /></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Tours/Travel -->
     <!-- Tours/Travel -->
     <section id="tours">
       <div class="container">
@@ -273,55 +247,48 @@
             view all <img src="/Imgs/icons/bleft.png" alt="" />
           </div>
         </div>
-        <div class="tours-cards">
-          <div class="tours-card">
-            <div class="tour-img">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
               <img
                 src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="card-img-top"
                 alt=""
-                width="320"
-                height="380"
               />
-            </div>
-            <div class="tours-card-content">
-              <div class="tours-card-contents-text">
-                <h3>East Village Ice Cream Crawl</h3>
-                <p>
+              <div class="card-body">
+                <h5 class="card-title">East Village Ice Cream Crawl</h5>
+                <p class="card-text">
                   We will stop at five different world-class ice cream shops on this 1.5 mile 1.5
                   hour tour. At each ice cream store we'll explore the story behind the business and
                   see what makes the ice cream unique as you savor every…
                 </p>
-              </div>
-              <div class="tours-card-content-icons">
-                <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
-                <h6><img src="/Imgs/icons/user.png" alt="" /> Avenger Initiative</h6>
-                <h6><img src="/Imgs/icons/message.png" alt="" /> 2</h6>
+                <div class="d-flex justify-content-between">
+                  <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
+                  <h6><img src="/Imgs/icons/user.png" alt="" /> Avenger Initiative</h6>
+                  <h6><img src="/Imgs/icons/message.png" alt="" /> 2</h6>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="tours-card">
-            <div class="tour-img">
+          <div class="col">
+            <div class="card">
               <img
                 src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="card-img-top"
                 alt=""
-                width="320"
-                height="380"
               />
-            </div>
-            <div class="tours-card-content">
-              <div class="tours-card-contents-text">
-                <h3>Brooklyn Bridge cinematic photo walk</h3>
-                <p>
+              <div class="card-body">
+                <h5 class="card-title">Brooklyn Bridge cinematic photo walk</h5>
+                <p class="card-text">
                   This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but
                   I’m always open to capture clients at different locations upon request for an
                   additional charge.
                 </p>
-              </div>
-              <div class="tours-card-content-icons">
-                <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
-                <h6><img src="/Imgs/icons/user.png" alt="" /> Ager Pagla</h6>
-                <h6><img src="/Imgs/icons/message.png" alt="" />12</h6>
+                <div class="d-flex justify-content-between">
+                  <h6><img src="/Imgs/icons/calendersml.png" alt="" /> Today</h6>
+                  <h6><img src="/Imgs/icons/user.png" alt="" /> Ager Pagla</h6>
+                  <h6><img src="/Imgs/icons/message.png" alt="" />12</h6>
+                </div>
               </div>
             </div>
           </div>
@@ -340,42 +307,54 @@
         </div>
 
         <!-- Activities Cards -->
-        <div class="activities-cards">
-          <div class="activities-card">
-            <img
-              src="https://images.unsplash.com/photo-1513432800008-a900568fccfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h4>Sailing</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1513432800008-a900568fccfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sailing</h5>
+              </div>
+            </div>
           </div>
-          <div class="activities-card">
-            <img
-              src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h4>Climbing</h4>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Climbing</h5>
+              </div>
+            </div>
           </div>
-          <div class="activities-card">
-            <img
-              src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h4>Skiing</h4>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Skiing</h5>
+              </div>
+            </div>
           </div>
-          <div class="activities-card">
-            <img
-              src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
-              alt=""
-              width="320"
-              height="380"
-            />
-            <h4>Hiking</h4>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hiking</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
