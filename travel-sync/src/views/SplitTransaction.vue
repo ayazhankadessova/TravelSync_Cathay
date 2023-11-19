@@ -54,6 +54,13 @@
     <input v-model="sharedWith" type="text" class="form-control" placeholder="Enter names separated by commas">
   </div>
   <br>
+
+  <div class="form-group">
+  <label class="fw-bold">Amount Spent By Each:</label>
+  <br>
+  <input v-model="amountSpentByEach" type="text" class="form-control" placeholder="Enter amounts separated by commas">
+</div>
+<br>
   
   <div class="form-group">
     <label class="fw-bold">Description:</label>
@@ -63,7 +70,7 @@
   <br>
   
   <div class="form-group">
-    <label class="fw-bold">Amount Spent:</label>
+    <label class="fw-bold">Total Amount Spent:</label>
     <br>
     <input v-model.number="amountSpent" type="number" class="form-control" placeholder="Enter amount spent">
   </div>
