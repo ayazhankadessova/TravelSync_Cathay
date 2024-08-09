@@ -193,10 +193,8 @@ img {
 
 .filters {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   flex-shrink: 10px;
-  flex: 10;
   gap: 10rem;
 }
 
